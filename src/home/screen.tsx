@@ -8,7 +8,7 @@ import {
   Sheet,
   XStack,
   YStack,
-} from "tamagui";
+} from "@my/ui";
 import { ChevronDown, ChevronUp } from "@tamagui/lucide-icons";
 import { useState } from "react";
 import { useLink } from "solito/link";
@@ -50,7 +50,9 @@ export function HomeScreen() {
       </YStack>
 
       <XStack>
-        <Button {...linkProps}>Link to user</Button>
+        <Button theme={"blue"} {...linkProps}>
+          Link to user
+        </Button>
       </XStack>
 
       <SheetDemo />

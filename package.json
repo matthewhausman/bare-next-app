@@ -2,37 +2,45 @@
   "name": "bare-next-app",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "./*"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "watch": "yarn workspaces foreach -pi run watch"
   },
   "dependencies": {
-    "@tamagui/config": "^1.86.6",
-    "@tamagui/font-inter": "^1.86.6",
     "@tamagui/lucide-icons": "^1.86.6",
-    "@tamagui/next-plugin": "^1.86.6",
     "@tamagui/next-theme": "^1.86.6",
-    "@tamagui/react-native-media-driver": "^1.86.6",
-    "@tamagui/shorthands": "^1.86.6",
-    "@tamagui/themes": "^1.86.6",
     "next": "14.1.0",
     "raf": "^3.4.1",
     "react": "^18",
     "react-dom": "^18",
     "react-native": "^0.73.2",
+    "react-native-svg": "^14.1.0",
     "react-native-web": "^0.19.10",
     "react-native-web-lite": "^1.86.6",
     "solito": "^4.2.0",
     "tamagui": "^1.86.6"
   },
+  "resolutions": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-refresh": "^0.14.0",
+    "react-native-svg": "13.9.0",
+    "react-native-web": "~0.19.6"
+  },
   "devDependencies": {
+    "@tamagui/next-plugin": "^1.86.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
-    "typescript": "^5"
-  }
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "yarn@4.0.2"
 }

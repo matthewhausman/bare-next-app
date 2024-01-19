@@ -1,4 +1,4 @@
-import config from "../../tamagui.config";
+import { config } from "@my/ui";
 import NextDocument, {
   DocumentContext,
   DocumentInitialProps,
